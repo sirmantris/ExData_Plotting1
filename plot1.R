@@ -6,3 +6,8 @@ house_final<-cbind(house2, "Datetime" = as.POSIXct(paste(house2$Date, house2$Tim
 
 hist(as.numeric(house_final$Global_active_power), col="Red", main="Global Active Power",  ##plot graph 1
      xlab="Global Active power (kilowatts)", ylab="Frequency")
+
+
+dev.copy(png, file="plot4.png", height=640, width=640) ##save file
+dev.off()
+
