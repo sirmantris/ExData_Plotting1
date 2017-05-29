@@ -8,6 +8,6 @@ hist(as.numeric(house_final$Global_active_power), col="Red", main="Global Active
      xlab="Global Active power (kilowatts)", ylab="Frequency")
 
 
-dev.copy(png, file="plot4.png", height=640, width=640) ##save file
+dev.copy(png, file="plot1.png", height=640, width=640) ##save file
 dev.off()
 
